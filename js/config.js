@@ -138,6 +138,21 @@ const defaults = {
 
 const versions = {
 	classic: {},
+	binary: {
+		font: "binary",
+		// Slightly more breathing room between glyphs
+		glyphVerticalSpacing: 1.05,
+		glyphEdgeCrop: 0.05,
+		// Warm amber palette close to #f5ac55
+		palette: [
+			{ color: hsl(0.0906, 0.9, 0.0), at: 0.0 },
+			{ color: hsl(0.0906, 0.9, 0.35), at: 0.35 },
+			{ color: hsl(0.0906, 0.9, 0.65), at: 0.75 },
+			{ color: hsl(0.0906, 0.9, 0.75), at: 1.0 },
+		],
+		cursorColor: hsl(0.0906, 0.9, 0.65),
+		cursorIntensity: 2,
+	},
 	megacity: {
 		font: "megacity",
 		animationSpeed: 0.5,
@@ -244,6 +259,7 @@ const versions = {
 		glintTexture: "metal",
 		baseTexture: "pixels",
 		glyphEdgeCrop: 0.1,
+		glyphVerticalSpacing: 1.05,
 		cursorColor: hsl(0.292, 1, 0.8),
 		cursorIntensity: 2,
 		isolateGlint: true,
@@ -259,9 +275,12 @@ const versions = {
 		bloomStrength: 0.7,
 		fallSpeed: 0.3,
 		palette: [
-			{ color: hsl(0.37, 0.6, 0.0), at: 0.0 },
-			{ color: hsl(0.37, 0.6, 0.5), at: 1.0 },
+			{ color: hsl(0.0906, 0.9, 0.0), at: 0.0 },
+			{ color: hsl(0.0906, 0.9, 0.35), at: 0.35 },
+			{ color: hsl(0.0906, 0.9, 0.65), at: 0.75 },
+			{ color: hsl(0.0906, 0.9, 0.75), at: 1.0 },
 		],
+		cursorColor: hsl(0.0906, 0.9, 0.65),
 		cycleSpeed: 0.01,
 		volumetric: true,
 		forwardSpeed: 0.2,
