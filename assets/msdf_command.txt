@@ -1,4 +1,7 @@
 ./msdfgen/out/msdfgen msdf -svg ./svg\ sources/texture_simplified.svg -size 512 512 -pxrange 4 -o ./matrixcode_msdf.png
 ./msdfgen/out/msdfgen msdf -svg ./svg\ sources/gothic_texture_simplified.svg -size 512 512 -pxrange 4 -o ./gothic_msdf.png
 ./msdfgen/out/msdfgen msdf -svg ./svg\ sources/coptic_texture_simplified.svg -size 512 512 -pxrange 4 -o ./coptic_msdf.png
-./msdfgen/out/msdfgen msdf -svg ./svg\ sources/binary_texture.svg -size 512 512 -pxrange 4 -o ./binary_msdf.png
+./msdfgen/out/msdfgen msdf -font ./assets/fonts/FunnelSans-Regular.ttf 48 -size 256 256 -pxrange 4 -o /tmp/binary_msdf/zero.bmp
+./msdfgen/out/msdfgen msdf -font ./assets/fonts/FunnelSans-Regular.ttf 49 -size 256 256 -pxrange 4 -o /tmp/binary_msdf/one.bmp
+# stitch zero.bmp + one.bmp into 512x256 bmp, then:
+# sips -s format png /tmp/binary_msdf/binary.bmp --out ./assets/binary_msdf.png
