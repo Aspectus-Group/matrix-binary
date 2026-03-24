@@ -55,6 +55,11 @@ const fonts = {
 		glyphSequenceLength: 12,
 		glyphTextureGridSize: [4, 4],
 	},
+	binary: {
+		glyphMSDFURL: "assets/binary_msdf.png",
+		glyphSequenceLength: 2,
+		glyphTextureGridSize: [2, 1],
+	},
 };
 
 const textureURLs = {

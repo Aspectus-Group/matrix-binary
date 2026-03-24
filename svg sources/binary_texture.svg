@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+	<path fill="#ffffff" fill-rule="evenodd" d="
+		M40 40 H216 V472 H40 Z
+		M90 90 H166 V422 H90 Z
+		M368 60 H416 V472 H368 Z
+		M336 432 H448 V472 H336 Z
+	"/>
+</svg>
